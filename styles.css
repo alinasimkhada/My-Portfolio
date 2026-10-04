@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: #3f3a45;
+    background-color: #faf7f5;
+}
+
+.site-header {
+    background: linear-gradient(135deg, #eee7f7, #f8ece8);
+    text-align: center;
+    padding: 50px 20px 35px;
+    border-bottom: 1px solid #e3d8e7;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #5c4b68;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.site-header > p {
+    margin: 8px 0 28px;
+    color: #766477;
+    font-size: 1.05rem;
+}
+
+.main-nav {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-nav h2 {
+    margin: 0 0 12px;
+    color: #5c4b68;
+    font-size: 1rem;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 9px 18px;
+    color: #5c4b68;
+    background-color: #ffffff;
+    border: 1px solid #d9cce0;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #6f5a7c;
+    color: #ffffff;
+}
+
+.container {
+    width: min(90%, 1050px);
+    margin: 0 auto;
+}
+
+.content-section {
+    margin: 35px 0;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eadfe8;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(92, 75, 104, 0.08);
+}
+
+.content-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5c4b68;
+    font-size: 1.8rem;
+}
+
+.content-section p {
+    margin-bottom: 18px;
+}
+
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px;
+    object-fit: cover;
+    border: 5px solid #eee4f1;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(92, 75, 104, 0.15);
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0;
+}
+
+.skills-list dt {
+    margin-bottom: 5px;
+    color: #6f5a7c;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.skills-list dd {
+    margin: 0;
+    color: #6c6570;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #5c4b68;
+    font-weight: 600;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 14px;
+    font: inherit;
+    color: #3f3a45;
+    background-color: #fcfafc;
+    border: 1px solid #d9cce0;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #8c729b;
+    box-shadow: 0 0 0 3px rgba(140, 114, 155, 0.15);
+}
+
+.submit-button {
+    padding: 11px 28px;
+    color: #ffffff;
+    background-color: #6f5a7c;
+    border: none;
+    border-radius: 22px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #5c4b68;
+}
+
+.site-footer {
+    margin-top: 50px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #62596a;
+    background-color: #eee7f1;
+}
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+.site-footer a {
+    color: #6f5a7c;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding: 35px 15px 25px;
+    }
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .main-nav a {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .content-section {
+        margin: 25px 0;
+        padding: 25px 20px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
